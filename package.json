@@ -20,7 +20,7 @@
   },
   "description": "Express Generator Demo",
   "main": "server.js",
-  "author": "Tom Tsiliopoulos",
+  "author": "Manpreet Singh",
   "license": "ISC",
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
