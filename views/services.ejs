@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="assets/photos/logo.png" height="70" width="70"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+
+          <a class="nav-link" href="/"><i class="fa fa-lg fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <% if (title == "Aboutme") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/aboutme"><i class="fa fa-lg fa-info"></i> About Me</a>
+        </li>
+
+
+        <% if (title == "projects") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/projects"><i class="fa fa-lg fa-briefcase"></i> projects</a>
+        </li>
+
+
+        <% if (title == "services") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/services"><i class="fa fa-lg fa-birthday-cake"></i> services</a>
+        </li>
+
+
+        <% if (title == "contacts") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/contacts"><i class="fa fa-lg fa-phone"></i> contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container ">    
+        <h3 class="text-center mt-4">Services I Can Provide</h3>
+
+
+        <div class="row mt-4 align-items-center">
+            <div class="col md-4">
+              <img src="assets/photos/services1.jpg" class="img-fluid ">
+              <h3 class="text-center">computer programming </h3>
+            </div>
+            <div class="col md-4">
+                <img src="assets/photos/services2.jpg" class="img-fluid  ">
+                <h3 class="text-center"> Web Development</h3>
+              </div>
+              <div class="col md-4">
+                  <img src="assets/photos/services3.jpg" class="img-fluid ">
+                  <h3 class="text-center">mobile app development</h3>
+                </div>
+          </div>
+
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="Scripts/app.js"></script>
+</body>
+
+</html>

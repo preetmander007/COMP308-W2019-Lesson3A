@@ -15,7 +15,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">COMP308</a>
+    <a class="navbar-brand" href="#"><img src="assets/photos/logo.png" height="70" width="70"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,39 +34,39 @@
         </li>
 
 
-        <% if (title == "About") { %>
+        <% if (title == "Aboutme") { %>
         <li class="nav-item active">
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/about"><i class="fa fa-lg fa-info"></i> About</a>
+          <a class="nav-link" href="/aboutme"><i class="fa fa-lg fa-info"></i> About Me</a>
         </li>
 
 
-        <% if (title == "Products") { %>
+        <% if (title == "projects") { %>
         <li class="nav-item active">
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/products"><i class="fa fa-lg fa-briefcase"></i> Products</a>
+          <a class="nav-link" href="/projects"><i class="fa fa-lg fa-briefcase"></i> projects</a>
         </li>
 
 
-        <% if (title == "Services") { %>
+        <% if (title == "services") { %>
         <li class="nav-item active">
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/services"><i class="fa fa-lg fa-birthday-cake"></i> Services</a>
+          <a class="nav-link" href="/services"><i class="fa fa-lg fa-birthday-cake"></i> services</a>
         </li>
 
 
-        <% if (title == "Contact") { %>
+        <% if (title == "contacts") { %>
         <li class="nav-item active">
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/contact"><i class="fa fa-lg fa-phone"></i> Contact</a>
+          <a class="nav-link" href="/contacts"><i class="fa fa-lg fa-phone"></i> contacts</a>
         </li>
       </ul>
     </div>
@@ -74,13 +74,13 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-        featured content or information.</p>
+        <img src="assets/photos/welcome.jpg" class="img-fluid" width="1000">
+      <h1 class="display-4">Hello there</h1>
+      <p class="lead">This is my assignment1.</p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p>Manpreet Singh Student Id:- 300976016</p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="/aboutme" role="button">about me</a>
       </p>
     </div>
   </div>

@@ -2,28 +2,28 @@ let express = require('express');
 let router = express.Router();
 
 /* GET home page. */
-router.get('/home', (req, res, next) => {
+router.get('/', (req, res, next) => {
   res.render('index', { title: 'Home' });
 });
 
 /* GET about me page. */
 router.get('/aboutme', (req, res, next) => {
-  res.render('index', { title: 'About' });
+  res.render('aboutme', { title: 'Aboutme' });
 });
 
 /* GET projects page. */
 router.get('/projects', (req, res, next) => {
-  res.render('index', { title: 'Contact' });
+  res.render('projects', { title: 'Projects' });
 });
 
 /* GET services page. */
 router.get('/services', (req, res, next) => {
-  res.render('index', { title: 'Products' });
+  res.render('services', { title: 'Services' });
 });
 
 /* GET contacts page. */
 router.get('/contacts', (req, res, next) => {
-  res.render('index', { title: 'Services' });
+  res.render('contacts', { title: 'Contacts' });
 });
 
 module.exports = router;

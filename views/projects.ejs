@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="assets/photos/logo.png" height="70" width="70"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+
+          <a class="nav-link" href="/"><i class="fa fa-lg fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <% if (title == "Aboutme") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/aboutme"><i class="fa fa-lg fa-info"></i> About Me</a>
+        </li>
+
+
+        <% if (title == "projects") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/projects"><i class="fa fa-lg fa-briefcase"></i> projects</a>
+        </li>
+
+
+        <% if (title == "services") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/services"><i class="fa fa-lg fa-birthday-cake"></i> services</a>
+        </li>
+
+
+        <% if (title == "contacts") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/contacts"><i class="fa fa-lg fa-phone"></i> contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Content -->
+
+<div class="container ">    
+        <h3 class="text-center mt-4">My Projects</h3>
+<!--Project 1-->
+        <div class="row mt-4 bg-dark">
+            <div class="col sm-4">
+              <img src="Assets/photos/capture.jpg" class="img-fluid img-thumbnail float-right">
+            </div>
+            <div class="col sm-8 ml-2 text-left">
+            <div class="container">
+                <h4>My Daily Bread</h4>
+        
+                <h6 class="bold">Overview</h6>
+                <p>MY Daily Bread is a meal planning automated web application which is powered by Edamam API. This app can easily calculate
+                    user's BMI and automatically calculate the required calaries per day. This web application can also be used to make a meal
+                    plan weekly with 3 meals per day along with the ingredients and recipe link.
+          </p>
+               
+                <h6>Platform Used</h6>
+                <p>Android Studio, Java, Php, SQL</p>
+        
+                <h6>Project Duration</h6>
+                <p>September 2018 - December 2018</p>
+            </div>
+          </div>
+    </div>
+
+    <!-- Project 2-->
+    <div class="row mt-4 bg-dark">
+            <div class="col sm-4">
+              <img src="Assets/photos/capture1.jpg" class="img-fluid img-thumbnail float-right">
+            </div>
+            <div class="col sm-8 ml-2 text-left">
+            <div class="container">
+                <h4>My Pizza</h4>
+        
+                <h6 class="bold">Overview</h6>
+                <p>My pizza is an android application that is used to order the pizza online along with the custom orders 
+                    in which the user can edit his pizza such as topings etcetera.
+          </p>
+               
+                <h6>Platform Used</h6>
+                <p>Android Studio</p>
+        
+                <h6>Project Duration</h6>
+                <p>Janyary 2018 - April 2018</p>
+            </div>
+          </div>
+    </div>
+
+  </div>
+</div>
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="Scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="assets/photos/logo.png" height="70" width="70"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <% if (title == "Home") { %>
+                <li class="nav-item active">
+                    <% } else { %>
+                <li class="nav-item">
+                    <% } %>
+
+                    <a class="nav-link" href="/"><i class="fa fa-lg fa-home"></i> Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+
+
+                <% if (title == "Aboutme") { %>
+                <li class="nav-item active">
+                    <% } else { %>
+                <li class="nav-item">
+                    <% } %>
+                    <a class="nav-link" href="/aboutme"><i class="fa fa-lg fa-info"></i> About Me</a>
+                </li>
+
+
+                <% if (title == "projects") { %>
+                <li class="nav-item active">
+                    <% } else { %>
+                <li class="nav-item">
+                    <% } %>
+                    <a class="nav-link" href="/projects"><i class="fa fa-lg fa-briefcase"></i> projects</a>
+                </li>
+
+
+                <% if (title == "services") { %>
+                <li class="nav-item active">
+                    <% } else { %>
+                <li class="nav-item">
+                    <% } %>
+                    <a class="nav-link" href="/services"><i class="fa fa-lg fa-birthday-cake"></i> services</a>
+                </li>
+
+
+                <% if (title == "contacts") { %>
+                <li class="nav-item active">
+                    <% } else { %>
+                <li class="nav-item">
+                    <% } %>
+                    <a class="nav-link" href="/contacts"><i class="fa fa-lg fa-phone"></i> contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            
+    <header class='masthead'>
+        <p class='masthead-intro'>Hello, I am </p>
+        <h1 class='masthead-heading'>Manpreet Singh</h1>
+        <img src="assets/photos/myPhoto.jpg" alt="Avatar" class="avatar"  class="fa fa-align-right" aria-hidden="true">
+      </header>
+
+
+
+      <section class="introduction-section">
+            
+          <h1>Introduction</h1>
+          <p>I am a currently a student at centennial college persuing an advanced diploma in Software Engineering Technology, and soon to be web developer.</p>
+          <p>I love the internet, technology, and building beautiful things.</p>
+          <p>PDF version of Manpreet Singh's resume in : <a href="assets/docs/Manpreet_Carrier_Portfolio.pdf">Download PDF</a>.</p>
+      </section>
+      <section class="location-section">
+          <h1>Address</h1>
+          <p>182 Sedgemount drive, Scarborough, ON M1H 1Y2, Canada </p>
+      </section>
+      
+         
+        
+    </object>
+      
+      <footer class="content-footer">
+          <p>Quick links:</p>
+          <ul class="social">
+              <li><a class="css-is-deranged" href="https://github.com/preetmander007">GitHub</a></li>
+              
+              
+          </ul>
+        
+      </footer>
+
+        </div>
+    </div>
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+
+
+
+</body>
+
+</html>
